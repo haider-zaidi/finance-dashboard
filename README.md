@@ -28,7 +28,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) for the **landing page**, then **Enter dashboard** or go to `/dashboard`.
+Open [https://finance-dashboard-frontend-flame.vercel.app/](https://finance-dashboard-frontend-flame.vercel.app/) for the **landing page**, then **Enter dashboard** or go to `/dashboard`.
 
 ```bash
 npm run build
