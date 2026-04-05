@@ -25,7 +25,13 @@ Built with **Next.js** & **TypeScript**; mock data only, no backend.
 ## Preview
 
 <p align="center">
-  <img src="./public/images/img24.jpg" alt="Lumina Finance — dashboard hero preview" width="900" />
+  <img src="./public/images/img11.jpg" alt="Lumina Finance — dashboard hero preview" width="900" />
+</p>
+<p align="center">
+  <img src="./public/images/img12.jpg" alt="Lumina Finance — dashboard hero preview" width="900" />
+</p>
+<p align="center">
+  <img src="./public/images/img13.jpg" alt="Lumina Finance — dashboard hero preview" width="900" />
 </p>
 
 <p align="center"><sub>Landing hero · dark glass UI aesthetic</sub></p>
