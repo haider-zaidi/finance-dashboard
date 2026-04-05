@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import landingHero from "../public/images/img24.jpg";
 import {
   ArrowRight,
   BarChart3,
@@ -96,6 +98,42 @@ export default function Home() {
             See what&apos;s inside
           </Link>
         </div>
+
+        <section
+          className="relative mt-16 md:mt-24"
+          aria-label="Product preview"
+        >
+          <div className="relative left-1/2 w-screen max-w-[100vw] -translate-x-1/2 px-0 sm:px-2 lg:px-4">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="relative">
+                <div
+                  className="pointer-events-none absolute -inset-3 rounded-[1.75rem] bg-gradient-to-tr from-amber-500/15 via-violet-500/25 to-fuchsia-500/20 opacity-90 blur-3xl dark:from-amber-500/10 dark:via-violet-500/35 dark:to-fuchsia-500/25"
+                  aria-hidden
+                />
+                <div className="relative overflow-hidden rounded-2xl border border-zinc-200/90 bg-zinc-950 shadow-[0_32px_64px_-12px_rgba(24,24,27,0.45),0_0_0_1px_rgba(255,255,255,0.06)_inset] dark:border-white/[0.12] dark:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.75),0_0_0_1px_rgba(255,255,255,0.08)_inset]">
+                  <div className="relative aspect-[5/2] min-h-[220px] sm:min-h-[260px] md:aspect-[2.35/1] md:min-h-[300px]">
+                    <Image
+                      src={landingHero}
+                      alt="Lumina Finance dashboard preview: portfolio summary, major indices chart, sectors, and stock tiles in a dark glass UI."
+                      fill
+                      priority
+                      sizes="(max-width: 640px) 100vw, (max-width: 1280px) 92vw, 1200px"
+                      className="object-cover object-[center_42%]"
+                    />
+                    <div
+                      className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-zinc-50 via-zinc-50/40 to-transparent dark:from-zinc-950 dark:via-zinc-950/50"
+                      aria-hidden
+                    />
+                    <div
+                      className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/25 to-transparent"
+                      aria-hidden
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <div className="mt-14 grid grid-cols-2 gap-4 border-y border-zinc-200 py-10 dark:border-white/10 md:grid-cols-4">
           {[
