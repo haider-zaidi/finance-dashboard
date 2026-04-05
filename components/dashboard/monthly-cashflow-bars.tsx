@@ -126,36 +126,44 @@ export function MonthlyCashflowBars() {
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-wrap gap-4 text-xs text-zinc-500 dark:text-zinc-400">
+      <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-zinc-500 dark:text-zinc-400">
         <span className="flex items-center gap-2">
-          <span className="h-2 w-2 rounded-sm bg-emerald-500" />
+          <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-500" />
           Income
         </span>
         <span className="flex items-center gap-2">
-          <span className="h-2 w-2 rounded-sm bg-rose-500" />
+          <span className="h-2 w-2 shrink-0 rounded-full bg-rose-500" />
           Expenses
         </span>
       </div>
-      <div className="flex flex-wrap items-end gap-4 sm:gap-6">
+      <div
+        className="grid w-full items-end gap-x-2 sm:gap-x-4 md:gap-x-6"
+        style={{
+          gridTemplateColumns: `repeat(${series.length}, minmax(0, 1fr))`,
+        }}
+      >
         {series.map((row) => (
-          <div key={row.month} className="flex flex-col items-center gap-2">
-            <div className="flex h-36 items-end gap-1.5">
+          <div
+            key={row.month}
+            className="flex min-w-0 flex-col items-center gap-2"
+          >
+            <div className="flex h-40 w-full items-end justify-center gap-1.5 sm:h-44 sm:gap-2">
               <div
-                className="w-6 rounded-t-md bg-emerald-500/90 dark:bg-emerald-500/80"
+                className="w-2.5 shrink-0 rounded-t-full bg-emerald-500/90 dark:bg-emerald-500/85 sm:w-3"
                 style={{
-                  height: `${Math.max(8, (row.income / maxVal) * 100)}%`,
+                  height: `${Math.max(10, (row.income / maxVal) * 100)}%`,
                 }}
                 title={`Income ${row.income}`}
               />
               <div
-                className="w-6 rounded-t-md bg-rose-500/90 dark:bg-rose-500/80"
+                className="w-2.5 shrink-0 rounded-t-full bg-rose-500/90 dark:bg-rose-500/85 sm:w-3"
                 style={{
-                  height: `${Math.max(8, (row.expense / maxVal) * 100)}%`,
+                  height: `${Math.max(10, (row.expense / maxVal) * 100)}%`,
                 }}
                 title={`Expense ${row.expense}`}
               />
             </div>
-            <span className="max-w-[4.5rem] text-center text-[10px] font-medium text-zinc-500 dark:text-zinc-400">
+            <span className="w-full px-0.5 text-center text-[10px] font-medium leading-tight text-zinc-500 dark:text-zinc-400">
               {row.label}
             </span>
           </div>
