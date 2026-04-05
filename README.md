@@ -25,16 +25,16 @@ Built with **Next.js** & **TypeScript**; mock data only, no backend.
 ## Preview
 
 <p align="center">
-  <img src="./public/images/img11.jpg" alt="Lumina Finance — dashboard hero preview" width="900" />
+  <img src="public/images/img11.png" alt="Lumina Finance — landing page hero" width="900" />
 </p>
 <p align="center">
-  <img src="./public/images/img12.jpg" alt="Lumina Finance — dashboard hero preview" width="900" />
+  <img src="public/images/img12.png" alt="Lumina Finance — dashboard overview and charts" width="900" />
 </p>
 <p align="center">
-  <img src="./public/images/img13.jpg" alt="Lumina Finance — dashboard hero preview" width="900" />
+  <img src="public/images/img13.png" alt="Lumina Finance — transactions and insights" width="900" />
 </p>
 
-<p align="center"><sub>Landing hero · dark glass UI aesthetic</sub></p>
+<p align="center"><sub>Screenshots · commit <code>public/images/*.png</code> so they load on GitHub</sub></p>
 
 ---
 
